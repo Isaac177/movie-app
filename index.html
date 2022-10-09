@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 onclick="handleClick()">Movie App</h1>
+      </div>
+      <div class="searchField">
+        <form id="form">
+          <input class="search"
+            type="text"
+            id="search"
+            placeholder="Search for a movie..."
+          />
+          <input type="submit" value="Search" class="btn" />
+        </form>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="movie-container">
+        <div class="movie">
+          <img src="https://image.tmdb.org/t/p/w500/8WUVHemHFH2ZIP6NWkwlHWsyrEL.jpg" alt="movie" />
+          <div class="movie-info">
+            <h3>Movie Title</h3>
+            <span class="green">90%</span>
+          </div>
+          <div class="overview">
+            <h3>Overview</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>Movie App &copy; <span id="date">date</span></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
